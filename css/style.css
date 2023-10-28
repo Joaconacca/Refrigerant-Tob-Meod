@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+nav ul li {
+
+    background-color: rgba(78, 161, 240, 0.418);
+    padding: 8px;
+}
+
+
+nav ul li a{
+
+    text-decoration: none;
+    color: black;
+    margin:  0 175px;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+nav ul li a:hover{
+
+    outline: 10px solid rgba(7, 94, 109, 0.568);
+}
+
+
+
+nav ul li img{
+    width: 70px;
+    height: 70px;
+}
+
+.textobienvenida{
+    max-width: 750px;
+    margin-top: 70px;
+    font-size: large;
+    margin-left: 380px;
+    text-shadow: 15px 15px 20px rgba(21, 186, 232, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textobienvenida:hover{
+    outline: 10px solid rgba(7, 94, 109, 0.568);
+    padding: 10px;
+}
+
+h2{
+    color:rgba(19, 27, 27, 0.37);
+}
+
+.factura{
+    text-align: center;
+    color:rgb(7, 94, 109) ;
+    font-size: large;
+}
+
+.factura2{
+    margin: 30px;
+}
+
+.factura3{
+    margin-bottom: 50px;
+}
+
+.iniciofotos{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.iniciofoto1{
+    width: 350px;
+    height: 300px;
+}
+
+.iniciofoto2{
+    width: 350px;
+    height: 300px;
+
+}
+
+.consultarprecio{
+    font-size: large;
+    background: black;
+    color:white;
+    text-decoration: none;
+    border-radius: 50px;
+    padding:20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 150px;
+
+}
+
+.consultarprecio:hover{
+    background-color: rgb(78, 162, 240);
+    color: black;
+
+}
+
+.body{
+    background-color: rgba(141, 187, 208, 0.116);
+}
+
+.fotos{
+
+    margin: 70px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.foto16{
+    width: 257px;
+    height: 257px;
+}
+
+.foto17{
+    width: 257px;
+    height: 257px;
+}
+
+.foto18{
+    width: 130px;
+    height: 257px;
+}
+
+.foto19{
+    width: 257px;
+    height: 239px;
+}
+
+
+
+.copy{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.titulonosotros{
+    text-align: center;
+    margin: 70px;
+    text-decoration: underline;
+
+}
+
+
+
+.nuestraubi{
+    color:rgb(78, 162, 240);
+    margin: 30px;
+    text-align: center;
+    text-shadow: 7px 7px 10px rgba(21, 186, 232, 0.5);
+
+}
+
+.textoubi{
+    max-width: 750px;
+    margin-top: 60px;
+    font-size: large;
+    margin-left: 410px;
+}
+
+.textoubi:hover{
+    outline: 10px solid rgba(7, 94, 109, 0.568);
+    padding: 10px;
+}
+
+.mapa{
+    margin-left: 380px;
+    padding: 30px;
+}
+
+.ultimotexto{
+    max-width: 750px;
+    margin-top: 60px;
+    font-size: large;
+    margin-left: 410px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+
+/* Estilo del footer */
+footer {
+    background-color:rgba(78, 161, 240, 0.418) ;
+    color: black;
+    padding: 30px ;
+    text-align: center;
+}
+
+/* para que se pongan uno al lado de otro y bien con el texto al lado */
+.contacto-info {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo de cada elemento de contacto */
+.contacto {
+    margin: 0 30px;
+}
+
+.contacto a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.3s ease;
+}
+
+.contacto a:hover {
+    color:rgb(248, 55, 11) ;
+}
+
+.contacto img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.contacto span {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:500px) {
+    .fotos{
+        display: block;
+        margin:0  auto;
+       
+    }
+}
+
+@media screen and (max-width:700px) {
+    .fotos{
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+    .fotosaa
+{
+width: 150px;
+height: 150px;
+}
+
+.foto16
+{
+width: 150px;
+height: 150px;
+}
+
+}
