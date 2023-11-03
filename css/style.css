@@ -113,8 +113,9 @@ h2{
 
     margin: 70px;
     display: grid;
-    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-columns: 340px 340px 340px 340px;
     background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(152, 192, 231, 0.4);
 
 }
 
@@ -153,6 +154,20 @@ h2{
 
 }
 
+
+
+.divfotos{
+
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+    transition: transform 1s;
+ 
+}
+
+.divfotos:hover {
+    transform: scale(1.1); 
+  }
 
 
 .nuestraubi{
@@ -232,12 +247,40 @@ footer {
     font-weight: bold;
 }
 
+/* media queries */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:580px) {
     .fotos{
         display: block;
         margin:0  auto;
+        text-align: center;
        
+    }
+
+    .consultarprecio{
+        margin: 10px auto;
+    }
+
+    .foto16{
+
+        width: 110px;
+        height: 90px;
+    }
+
+    .foto17{
+        width: 100px;
+        height: 100px;
+    }
+
+    .foto18{
+        width: 60px;
+        height: 110px;
+    }
+
+    .foto19{
+        width: 100px;
+        height: 100px;
+
     }
 }
 
@@ -248,14 +291,38 @@ footer {
     }
     .fotosaa
 {
-width: 150px;
-height: 150px;
+width: 130px;
+height: 130px;
 }
 
 .foto16
 {
-width: 150px;
-height: 150px;
+width: 130px;
+height: 130px;
 }
 
+.foto17{
+    width: 130px;
+    height: 130px;
+}
+
+.foto18{
+    width: 90px;
+    height: 140px;
+}
+
+.foto19{
+    width: 130px;
+    height: 130px;
+
+}
+
+}
+
+@media screen and (max-width:1200) {
+    .fotos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 200px;
+        height: 200px;
+    }
 }
