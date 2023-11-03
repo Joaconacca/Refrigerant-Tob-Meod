@@ -89,6 +89,9 @@ h2{
     height: 300px;
 
 }
+.body{
+    background-color: rgba(141, 187, 208, 0.116);
+}
 
 .consultarprecio{
     font-size: large;
@@ -113,9 +116,7 @@ h2{
 
 }
 
-.body{
-    background-color: rgba(141, 187, 208, 0.116);
-}
+
 
 .fotos{
 
@@ -267,6 +268,11 @@ footer {
        
     }
 
+    .fotosaa{
+        width: 130px;
+        height: auto;
+    }
+
     .consultarprecio{
         margin: 10px auto;
     }
@@ -294,7 +300,7 @@ footer {
     }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (min-width:580px)and (max-width:850px)  {
     .fotos{
         grid-template-columns: 1fr 1fr;
         margin: 0 auto;
@@ -329,10 +335,75 @@ height: 130px;
 
 }
 
-@media screen and (max-width:1200) {
+
+
+
+
+@media screen and (min-width: 850px) and (max-width: 1023px) {
     .fotos{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: 200px;
-        height: 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
+    .fotosaa
+{
+width: 130px;
+height: 130px;
+}
+
+.foto16
+{
+width: 130px;
+height: 130px;
+}
+
+.foto17{
+    width: 130px;
+    height: 130px;
+}
+
+.foto18{
+    width: 90px;
+    height: 140px;
+}
+
+.foto19{
+    width: 130px;
+    height: 130px;
+
+}
+  }
+
+/* responsive index */
+
+@media screen and (max-width: 1024px) {
+   .textobienvenida{
+    max-width: 400px;
+    font-size: small;
+   }
+  }
+  
+
+/* nav responsive*/
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 769px) {
+    nav ul li {
+        display: inline-block;
+    }
+
+    .logo {
+        display: inline-block;
+        margin-right: 20px;
     }
 }
