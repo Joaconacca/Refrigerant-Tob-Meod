@@ -7,8 +7,14 @@
 
 nav ul li {
 
-    background-color: rgba(78, 161, 240, 0.418);
+    background: rgb(82,141,187);
+    background: linear-gradient(90deg, rgba(82,141,187,1) 0%, rgba(170,223,237,1) 50%, rgba(82,141,187,0.9923319669664741) 100%);
+
     padding: 8px;
+}
+
+.logo{
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -23,8 +29,8 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-
-    outline: 10px solid rgba(7, 94, 109, 0.568);
+    text-decoration: underline;
+    color: black;
 }
 
 
@@ -39,12 +45,13 @@ nav ul li img{
     margin-top: 70px;
     font-size: large;
     margin-left: 380px;
-    text-shadow: 15px 15px 20px rgba(21, 186, 232, 0.5);
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s ease;
 }
 
 .textobienvenida:hover{
-    outline: 10px solid rgba(7, 94, 109, 0.568);
+    outline: 10px solid rgba(105, 175, 187, 0.568);
     padding: 10px;
 }
 
@@ -96,11 +103,12 @@ h2{
     margin-bottom: 20px;
     margin-right: 20px;
     width: 150px;
+    transition: all 0.4s ease;
 
 }
 
 .consultarprecio:hover{
-    background-color: rgb(78, 162, 240);
+    background-color: rgba(61, 166, 231, 0.701);
     color: black;
 
 }
@@ -183,10 +191,11 @@ h2{
     margin-top: 60px;
     font-size: large;
     margin-left: 410px;
+    transition: all 0.4s;
 }
 
 .textoubi:hover{
-    outline: 10px solid rgba(7, 94, 109, 0.568);
+    outline: 10px solid rgba(105, 175, 187, 0.568);
     padding: 10px;
 }
 
@@ -207,7 +216,8 @@ h2{
 
 /* Estilo del footer */
 footer {
-    background-color:rgba(78, 161, 240, 0.418) ;
+    background: rgb(82,141,187);
+    background: linear-gradient(90deg, rgba(82,141,187,1) 0%, rgba(170,223,237,1) 50%, rgba(82,141,187,0.9923319669664741) 100%);
     color: black;
     padding: 30px ;
     text-align: center;
