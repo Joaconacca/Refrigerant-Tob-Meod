@@ -5,47 +5,87 @@
 }
 
 
-nav ul li {
-
+/* Estilos base para el encabezado */
+header {
     background: rgb(82,141,187);
     background: linear-gradient(90deg, rgba(82,141,187,1) 0%, rgba(170,223,237,1) 50%, rgba(82,141,187,0.9923319669664741) 100%);
+    color: #fff;
+    padding: 15px;
+}
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    background: rgb(82, 141, 187);
+    background: linear-gradient(90deg, rgba(82, 141, 187, 1) 0%, rgba(170, 223, 237, 1) 50%, rgba(82, 141, 187, 0.9923319669664741) 100%);
     padding: 8px;
 }
 
-.logo{
+.logo {
     background-color: rgb(255, 255, 255);
 }
 
-
-nav ul li a{
-
+nav ul li a {
     text-decoration: none;
     color: black;
-    margin:  0 175px;
+    margin: 0 20px; /* Ajusta el margen según tus necesidades */
     font-size: x-large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     text-decoration: underline;
     color: black;
 }
 
-
-
-nav ul li img{
+nav ul li img {
     width: 70px;
     height: 70px;
 }
 
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 700px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        margin: 0;
+    }
+
+    nav ul li img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .textobienvenida{
-    max-width: 750px;
-    margin-top: 70px;
-    font-size: large;
-    margin-left: 380px;
-    
+    width: 40%;
+    margin: 70px auto;
+    font-size: 18px;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: all 0.4s ease;
 }
@@ -53,6 +93,7 @@ nav ul li img{
 .textobienvenida:hover{
     outline: 10px solid rgba(105, 175, 187, 0.568);
     padding: 10px;
+    
 }
 
 h2{
@@ -62,11 +103,11 @@ h2{
 .factura{
     text-align: center;
     color:rgb(7, 94, 109) ;
-    font-size: large;
+    font-size: 16px;
 }
 
 .factura2{
-    margin: 30px;
+    margin: 20px;
 }
 
 .factura3{
@@ -76,19 +117,15 @@ h2{
 .iniciofotos{
     display: flex;
     justify-content: space-evenly;
-    margin: 50px;
+    margin: 50px auto;
+    flex-wrap: wrap;
 }
 
-.iniciofoto1{
+.iniciofotoimg{
     width: 350px;
     height: 300px;
 }
 
-.iniciofoto2{
-    width: 350px;
-    height: 300px;
-
-}
 .body{
     background-color: rgba(141, 187, 208, 0.116);
 }
@@ -122,30 +159,30 @@ h2{
 
     margin: 70px;
     display: grid;
-    grid-template-columns: 340px 340px 340px 340px;
+    grid-template-columns: 270px 270px 270px 270px;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgba(152, 192, 231, 0.4);
 
 }
 
 .foto16{
-    width: 257px;
-    height: 257px;
+    width: 230px;
+    height: 230px;
 }
 
 .foto17{
-    width: 257px;
-    height: 257px;
+    width: 200px;
+    height: 200px;
 }
 
 .foto18{
-    width: 130px;
-    height: 257px;
+    width: 100px;
+    height: 207px;
 }
 
 .foto19{
-    width: 257px;
-    height: 239px;
+    width: 180px;
+    height: 165px;
 }
 
 
@@ -188,10 +225,10 @@ h2{
 }
 
 .textoubi{
-    max-width: 750px;
+    padding: 5px 0;
     margin-top: 60px;
     font-size: large;
-    margin-left: 410px;
+    margin: auto;
     transition: all 0.4s;
 }
 
@@ -201,17 +238,18 @@ h2{
 }
 
 .mapa{
-    margin-left: 380px;
-    padding: 30px;
+    align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .ultimotexto{
-    max-width: 750px;
-    margin-top: 60px;
+    width: 750px;
+    margin: 60px auto 40px auto;
     font-size: large;
-    margin-left: 410px;
-    margin-bottom: 40px;
     font-weight: bold;
+    padding: 5px 0;
 }
 
 
@@ -336,9 +374,6 @@ height: 130px;
 }
 
 
-
-
-
 @media screen and (min-width: 850px) and (max-width: 1023px) {
     .fotos{
         grid-template-columns: 1fr 1fr 1fr;
@@ -373,37 +408,229 @@ height: 130px;
 }
   }
 
-/* responsive index */
 
-@media screen and (max-width: 1024px) {
-   .textobienvenida{
-    max-width: 400px;
-    font-size: small;
-   }
-  }
-  
-
-/* nav responsive*/
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        text-align: center;
+  @media screen and (min-width: 1024px) {
+    .mainproductos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
-    .logo {
-        display: block;
-        margin: 0 auto;
+    .fotosaa {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+/**inicio*/
+@media screen and (max-width: 1000px) {
+    .textobienvenida{
+        width: 60%;
+        font-size: 16px;
+    }
+    .iniciofotoimg{
+        width: 320px;
+        height: 270px;
+    }   
+}
+@media screen and (max-width: 690px) {
+    .textobienvenida{
+        width: 80%;
+    }
+    .iniciofotoimg{
+        width: 270px;
+        height: 220px;
+    }   
+}
+@media screen and (max-width: 570px) {
+    .iniciofotos{
+        flex-direction: column;
+        align-content: center;
+    }   
+    .separar{
+        margin-bottom: 2%;
+    } 
+    .iniciofotoimg{
+        width: 320px;
+        height: 270px;
+    } 
+}
+@media screen and (max-width: 450px) {
+    .textobienvenida{
+        width: 90%;
+        font-size: 18px;
     }
 }
 
-/* Estilos para pantallas más grandes */
-@media (min-width: 769px) {
-    nav ul li {
-        display: inline-block;
-    }
 
-    .logo {
-        display: inline-block;
-        margin-right: 20px;
+
+/**contactanos**/
+@media screen and (min-width: 1300px) and (max-width: 1900px) {
+    .nuestraubi{
+        margin-top: 30px;
+        font-size: 50px;
+    
+    }
+    
+    .textoubi{
+        font-size: 23px;
+        width: 1200px;
+    }
+    .ultimotexto{
+        width: 1000px;
+        font-size: 23px;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1299px) {
+    .nuestraubi{
+        font-size: 45px;
+    }
+    
+    .textoubi{
+        width: 900px;
+    }
+    .ultimotexto{
+        width: 900px;
+    }
+}
+@media screen and (max-width: 999px) {
+    .nuestraubi{
+        font-size: 35px;
+    }
+    
+    .textoubi{
+        font-size: 17px;
+        width: 700px;
+    }
+    .mapa iframe{
+        width: 500px;
+        
+    }
+    .ultimotexto{
+        font-size: 17px;
+        width: 700px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .nuestraubi{
+        font-size: 30px;
+    }
+    
+    .textoubi{
+        width: 600px;
+    }
+    .ultimotexto{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .nuestraubi{
+        font-size: 30px;
+    }
+    .mapa iframe{
+        width: 400px;
+        height: 400px;
+    }
+    .textoubi{
+        width: 500px;
+    }
+    .ultimotexto{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .nuestraubi{
+        font-size: 25px;
+    }
+    .mapa iframe{
+        width: 350px;
+        height: 350px;
+    }
+    .textoubi{
+        font-size: 14px;
+        width: 500px;
+    }
+    .ultimotexto{
+        font-size: 14px;
+        width: 500px;
+    }
+}
+@media screen and (min-width: 400px)and (max-width: 500px) {
+    .nuestraubi{
+        font-size: 25px;
+    }
+    .mapa iframe{
+        width: 300px;
+        height: 300px;
+    }
+    .textoubi{
+        padding: 0 5px;
+        font-size: 14px;
+        width: 400px;
+    }
+    .ultimotexto{
+        padding: 0 5px;
+        font-size: 14px;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 399px) {
+    .nuestraubi{
+        font-size: 25px;
+    }
+    .mapa iframe{
+        width: 300px;
+        height: 300px;
+    }
+    .textoubi{
+        padding: 0 5px;
+        font-size: 14px;
+        width: 90%;
+    }
+    .ultimotexto{
+        padding: 0 5px;
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+/* footer */
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.contacto-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto {
+    text-align: center;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .contacto-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contacto a {
+        display: block;
+        margin-bottom: 10px;
     }
 }
